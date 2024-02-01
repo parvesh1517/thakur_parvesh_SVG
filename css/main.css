@@ -1,0 +1,246 @@
+.hidden {
+    display: none;
+}
+
+    @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+#bounceSvg {
+  animation: bounce 2s infinite;
+  text-align: center;
+}
+
+#bounceSvg2 {
+  background-color: transparent;
+  position: relative;
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-iteration-count: 5;
+  animation-direction: alternate-reverse;  
+  text-align: center;
+}
+
+
+.effetcLogo{
+    text-align: center;
+    background-color: transparent;
+}
+
+  
+.effetcLogo:hover object {
+    transform: scale(1.2);
+    transition: transform 3s ease; 
+    animation: colorChange 2s infinite;
+    
+}
+
+  
+  @keyframes colorChange {
+    0% { filter: hue-rotate(0deg); } 
+    100% { filter: hue-rotate(140deg); } 
+    0% { filter: hue-rotate(0deg); } 
+  }
+
+
+.bounceSvg2{
+    text-align: center;
+    background: transparent; 
+    margin-top: 80px;
+    margin-bottom: 90px;
+    
+}
+
+.bounceSvg2 object{
+    display: inline-block; 
+}
+
+.bounceSvg2:hover object{
+    animation: bounceAnimation 1s ease infinite;
+}
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(0); 
+
+    }
+    50% {
+        transform: translateY(-30px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+
+
+
+
+
+.logoColorChange{
+    text-align: center;
+    background-color: transparent;
+    margin-top: 90px;
+}
+
+
+.logoColorChange:hover object{
+    transition: transform 2s ease-in-out; 
+   
+}
+
+.logoColorChange:hover object {
+    cursor: pointer; 
+    transform: rotate(360deg) scale(2);
+    transition: transform 2s ease-in-out; 
+    animation: scaleUpDownWithShadow 2s ease-in-out infinite; 
+    }
+ @keyframes  scaleUpDownWithShadow{
+ 0% {
+    transform: scale(1); 
+    filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0)); 
+}
+50% {
+    transform: scale(1.2); 
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 1.5)); 
+}
+100% {
+    transform: scale(1); 
+    filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0)); 
+} }
+
+
+.spinHover{
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+
+.spinHover:hover object {
+    margin: 20px;
+    background: transparent;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow: 0 0 40px 30px rgb(252 21 21);
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+.nikeLogo {
+    position: absolute;
+    top: 80%;
+    left: -100%; 
+    transform: translate(50%, 50%);
+    transition: 0.3s ease;
+}
+
+.nikeLogo:hover .object {
+    opacity: 10;
+    animation: circularPath 3s linear infinite; 
+}
+
+@keyframes circularPath {
+    0% {
+        left: 30%; 
+        transform: translate(-50%, -50%) ; 
+    }
+    25% {
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+    50% {
+        left: 70%; 
+        transform: translate(-50%, -50%); 
+    }
+    75% {
+        left: 50%;
+        transform: translate(-50%, -50%) 
+    }
+    100% {
+        left: 30%;
+        transform: translate(-50%, -50%)  
+    }
+}
+
+#gear{
+    animation-name: ckw;
+    animation-duration: 15.5s;
+    /* Things added */
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 60px;
+    margin-top: 90px;
+    margin-left: 310px;
+    /* <--- */
+}
+@keyframes ckw {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.bufimg {
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+
+.bufimg:hover object {
+  transform: scale(1.50) ;
+  transition: transform 3s ease;
+}
